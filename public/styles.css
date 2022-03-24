@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #caf0f8;
+ 
+}
+/* Navbar */
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #03045e;
+}
+
+
+
+.navbar h1 {
+  background-color: #03045e;
+  color: #caf0f8;
+  font-size: 50px;
+}
+.navbar .links {
+  background-color: #03045e;
+  margin-left: auto;
+}
+
+.navbar a {
+  background-color: #03045e;
+  color: #caf0f8;
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #00b4d8;
+}
+
+/* all <Header/>  */
+.header {
+  margin: 20px auto;
+  font-size: 20px;
+}
+/* all <Button/>  */
+.btn {
+  border-radius: 8px;
+  border: 2px solid #03045e;
+  color: #03045e;
+  font-size: 20px;
+  background-color: #caf0f8;
+  padding: 10px 20px 10px 20px;
+}
+/* Zone Management  */
+.zoneManagement, .registerFood, .searchFood {
+  color: #00b4d8;
+  text-align: center;
+  margin: 40px auto;
+}
+
+.add-zone {
+  position: relative;
+  margin-bottom: 10px;
+}
+ /* removing the arrows from the input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="text"], input[type="number"] {
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 8px;
+  background-color: #90E0EF;
+  margin: -1px auto;
+  width: 300px;
+}
+
+select{
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 8px;
+  width: 122px;
+  background-color: #90E0EF;
+  margin-bottom: 8px;
+}
+.add-zone input[type="color"] {
+  width: 100px;
+  height: 50px;
+  border-radius: 8px;
+  position: relative;
+  top:11px;
+
+}
+
+/* add Zone  */
+.zoneItem{
+  border: 2px solid blue;
+  height: 40px;
+  width: 50%;
+  margin: 3px auto;
+  border-radius: 8px;
+  position: relative;
+}
+.zoneItem p{
+  text-align: left;
+  padding-top: 8px;
+  color:black;
+ 
+  
+}
+.zoneItem span{
+  background-color: #03045e;
+  position: relative;
+  float: right;
+  left: 30px;
+  color: white;
+  padding: 5px;
+  
+}
+
+/* Register Food  */
+.registerFood .container {
+  
+  width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  font-size: 20px;
+}
+.registerFood .container input{
+  display: inline-block;
+  width: 93%;
+}
+input#name{
+  border-radius: 8px 8px 0 0;
+  
+}
+input#barcode{
+  border-radius: 0;
+}
+select#units{
+  border-radius: 0 0 8px 0;
+  display: inline;
+  border: 2px solid;
+  
+}
+
+input#restock{
+  margin: 0;
+
+  border-radius: 0 0 0 8px;
+  display: inline-block;
+  width: 434px;
+  
+  
+}
+.registerFood .container button {
+  
+  width: 100%;
+}
+
+
+.registerFood .container:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+  rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+
+
+
+
+/* Search Food  */
+.searchFood {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  white-space: nowrap;
+}
+
+
+ 
+.byName{
+  
+  height: 70%;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 45%;
+  position: fixed;
+  left: 0;
+  margin-left: 30px;
+  padding: 80px 100px 50px; 
+  background-color: #CAF0F8;
+  border-radius: 10px;
+  
+}
+.byName:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+  rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.byBarcode:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+  rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.byBarcode {
+  height: 70%;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 45%;
+  position: fixed;
+  right: 0;
+  margin-right:30px;
+  padding: 80px 100px 50px; 
+  background-color: #CAF0F8;
+  border-radius: 10px;
+}
+
+ /* search by .....  */
+.byName h2,
+.byBarcode h2 {
+  margin: 10px auto;
+  font-size: 30px;
+  padding: 20px 0;
+}
+ /* Search results .....  */
+.byName h3,
+.byBarcode h3 {
+  font-size: 25px;
+  padding: 20px 0 40px;
+}
+.byName input, 
+.byBarcode input
+{
+  width: 270px
+}
+.byName button,
+.byBarcode button {
+  width: 150px;
+  margin: 20px 5px 10px 10px;
+}
+
+.byBarcode p, .byName p {
+  font-size: 20px;
+  text-align: left;
+  padding:6px 0 6px  10px;
+  color: #03045E;
+  
+}
+.byName p .link,
+.byBarcode p .link {
+  color: red;
+  position: relative;
+  float: right;
+  padding-right: 8px;
+}
+
+.byName p link:hover{
+  color:#03045e
+}
+.byBarcode p link:hover{
+  color:#03045e
+}
+
+/* .byBarcode .results {
+  background-color: red;
+  width: 100%;
+  height: 80%;
+} */
+
+
+
+
+
